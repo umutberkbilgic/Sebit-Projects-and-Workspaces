@@ -1,2 +1,3 @@
-# Sebit-Projects-and-Workspaces
-A compilation of projects I have worked on at Sebit Information &amp; Education Technologies Inc.
+# Sebit Projects and Workspaces
+
+Projects and code pieces I have worked on during my summer training. Bunch o dependancies.
