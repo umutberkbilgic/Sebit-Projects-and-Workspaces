@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> Enter details of your car: </p>
+
+<form id = "car_form">
+
+	Make : <input type = "text" name = "f_make"  id = "f_make"><br>
+	Model: <input type = "text" name = "f_model" id = "f_model"><br>
+	Color: <input type = "text" name = "f_color" id = "f_color"><br>
+	Year : <input type = "text" name = "f_year"  id = "f_year"><br><br>
+
+	<input type = "button" onclick = "getForm()" value = "Submit">
+
+</form>
+	<script>
+		function Car(make, model, color, year)
+		{  
+		  //          input  || default
+		  //        ---------||--------
+		  this.make =  make  || '';
+		  this.model = model || '';
+		  this.color = color || '';
+		  this.year =  year  || 0;
+		  
+		  this.printOut = function printOut(){
+		    return ("Make:  " + this.make  + "\n" + 
+			    "Model: " + this.model + "\n" + 
+			    "Color: " + this.color + "\n" + 
+			    "Year:  " + this.year  + "\n");
+		  }
+		}
+
+		function getForm()
+		{
+			var u_make = document.getElementById('f_make').value;
+			var u_model = document.getElementById('f_model').value;
+			var u_color = document.getElementById('f_color').value;
+			var u_year = document.getElementById('f_year').value;
+
+			var car2 = new Car(u_make, u_model, u_color, u_year);
+			alert(car2.printOut());
+		}
+
+	</script>
+</body>
+</html>
