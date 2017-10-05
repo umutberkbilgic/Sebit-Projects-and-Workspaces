@@ -4,8 +4,6 @@
 # METU Teknokent, Ankara, Turkey
 # v6
 
-# 000webhost password: iq@toICyKcVBlTqgZFWO
-
 from Tkinter import *
 from google.cloud import datastore
 import datetime
